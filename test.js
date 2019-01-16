@@ -6,7 +6,7 @@ const mapStream = (fn) =>
     callback()
   })
 
-const { unhook, stream } = hookStream(process.stderr)
+const [ unhook, stream ] = hookStream(process.stderr)
 
 stream
   .pipe(mapStream((x) => `STDOUT ${x}`))
