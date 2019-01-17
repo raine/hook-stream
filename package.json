@@ -1,15 +1,17 @@
 {
   "name": "hook-stream",
   "version": "2.0.0",
-  "description": "",
+  "description": "Hook into writes of a stream",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "stream",
+    "stdout",
+    "stderr"
+  ],
+  "author": "Raine Virta <raine.virta@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
-    "through2": "^3.0.0"
+    "through2-map": "^3.0.0",
+    "treis": "^2.6.0"
   }
 }
