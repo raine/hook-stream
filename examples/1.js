@@ -1,6 +1,6 @@
 const hookStream = require('../')
-const treis = require('treis')
 const map = require('through2-map')
+const treis = require('treis')
 
 const [ unhook, stream ] = hookStream(process.stderr)
 
