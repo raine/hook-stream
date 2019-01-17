@@ -1,7 +1,8 @@
 const { PassThrough } = require('stream')
 
 const DEFAULT_OPTIONS = {
-  endOnUnhook: true
+  endOnUnhook: true,
+  passthrough: true
 }
 
 module.exports = (hookedStream, opts = {}) => {
@@ -15,8 +16,9 @@ module.exports = (hookedStream, opts = {}) => {
   }
 
   hookedStream.write = (...args) => {
-    newStream.write(...args)
-    return originalWrite(...args)
+    const res = newStream.write(...args)
+    if (passthrough) return originalWrite(...args)
+    return res
   }
 
   return [unhook, newStream]
