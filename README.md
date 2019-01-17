@@ -4,6 +4,12 @@ Allows listening to a given stream's writes through a new, readable stream.
 
 Useful for listening to 3rd library's writes to `stdout` or `stderr`.
 
+## install
+
+```sh
+npm install --save hook-stream
+```
+
 ## API
 
 #### `hookStream(stream: Stream, options?: Object): [unhook: Function, readable: Stream]`
