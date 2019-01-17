@@ -1,7 +1,10 @@
 const { PassThrough } = require('stream')
 
 const DEFAULT_OPTIONS = {
+  // End the created stream when unhook is called
   endOnUnhook: true,
+
+  // Call write on the hooked stream
   passthrough: true
 }
 
