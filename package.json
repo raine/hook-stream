@@ -1,6 +1,6 @@
 {
   "name": "hook-stream",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Hook into writes of a stream",
   "main": "index.js",
   "keywords": [
