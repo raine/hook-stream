@@ -20,7 +20,7 @@ module.exports = (hookedStream, opts = {}) => {
 
   hookedStream.write = (...args) => {
     const res = newStream.write(...args)
-    if (passthrough) return originalWrite(...args)
+    if (opts.passthrough) return originalWrite(...args)
     return res
   }
 
