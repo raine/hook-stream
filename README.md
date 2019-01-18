@@ -2,7 +2,7 @@
 
 Allows listening to a given stream's writes through a new, readable stream.
 
-Useful for listening to 3rd library's writes to `stdout` or `stderr`.
+Useful for listening to a 3rd party library's writes to `stdout` or `stderr`.
 
 ## install
 
